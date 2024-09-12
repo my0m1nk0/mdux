@@ -1,19 +1,19 @@
-import './App.css';
-import './styles.css';
+import "./App.css";
+import "./styles.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import MoviesGrid from "./components/MoviesGrid";
 
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <h1>Welcome to Mdux</h1>
-        <footer className="footer">
-          <p className='footer'>
-          <p>© 2021 Mdux</p>
+      <div className="container">
+        <Header />
 
-          </p>
-        </footer>
-      
-      </header>
+        <MoviesGrid />
+      </div>
+
+      <Footer />
     </div>
   );
 }
